@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bytesized&family=Happy+Monkey&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: rgb(2, 2, 37);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      .nav {
+        background-color: rgb(27, 27, 76);
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .nav div p {
+    font-size: 2rem; 
+    font-weight: semi-bold;
+  
+    }
+
+      .nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: o.8rem;
+        margin: auto;
+      }
+      .nav ul li a:hover {
+        font-size: 1.05rem;
+        color: rgb(148, 148, 201);
+      }
+      .nav ul {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        margin: 0px 8px;
+      }
+      .section1 {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0px;
+      }
+      #dev_img {
+        height: 400px;
+        width: 500px;
+      }
+      span {
+        color: rgb(63, 63, 122);
+      }
+      .left {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.5rem;
+      }
+      body hr {
+        width: 90%;
+        margin: 10px auto;
+      }
+      .section2 {
+        height: 80vh;
+        width: auto;
+        padding: 20px;
+      }
+      .section2 p {
+        font-size: 0.8rem;
+        color: rgb(119, 116, 116);
+        margin: 10px auto;
+      }
+      .section2 div {
+        font-size: 2rem;
+      }
+      .timeline {
+        padding: 50px 0;
+        position: relative;
+      }
+
+      /* Timeline Line */
+      .timeline-container {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 90%;
+        margin: auto;
+      }
+
+      /* Horizontal Line */
+      .timeline-line {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+      }
+
+      /* Timeline Item */
+      .timeline-item {
+        position: relative;
+        width: 200px;
+        text-align: center;
+      }
+
+      /* Icon at the Top */
+      .icon {
+        font-size: 30px;
+        background: white;
+        color: black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        z-index: 2;
+        position: relative;
+      }
+
+      /* Vertical Connector Line */
+      .connector {
+        width: 2px;
+        height: 50px;
+        background-color: white;
+        margin: 5px auto;
+      }
+
+      /* Content Box */
+      .content {
+        background-color: #0e0e40;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+      }
+
+      .content h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .content p {
+        font-size: 14px;
+        color: #aaa;
+      }
+      #vertical-ruler {
+        border: 2px solid rgb(255, 255, 255); /* Vertical line using border */
+        height: 30px;
+        position: relative;
+        left: 20%;
+        top: 0;
+      }
+
+      .section3 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px 0px;
+        background-color: #03030d;
+        height: 400px;
+        width: 100%;
+        font-size: 1.5rem;
+      }
+      .section3 div {
+        width: 150px;
+        height: 250px;
+        margin: 50px 0px;
+      }
+      .section3 div ul li {
+        font-size: 1rem;
+      }
+      #copyright {
+        font-size: 1rem;
+        color: rgb(177, 170, 170);
+        text-align: center;
+        width: 100%;
+        margin: 8px 0px;
+      }
+      #foot-portfolio {
+        font-size: 1.5rem;
+      }
+      .foot-list {
+        font-size: 1rem;
+        margin: 50px 0px;
+      }
+        .btn-class button {
+    padding: 13px;
+    font-size: 16px;
+    background-color: #8787db; /* Blue color */
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    margin: 47px 8px;
+}
+
+/* designing footer        */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background: linear-gradient(to right, #0b0b28, #220d16);
+    color: white;
+    padding: 40px 0;
+    border-top-left-radius: 200px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.footer-column h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* .footer-column hr {
+    width: auto;
+    height: 3px;
+    background: white;
+    border: none;
+    margin-bottom: 10px;
+} */
+
+.footer-column p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 5px;
+}
+
+.newsletter input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 5px;
+    flex: 1;
+}
+
+.newsletter button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #080818;
+    color: #bbb;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* css for loading bar  */
+.loading-bar {
+  width:200px;
+  height: 4px;
+  color: white;
+  background: #ddd;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.bar {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, black, white);
+  position: absolute;
+  animation: loading 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div>
+          <p>Vishisht's Portfolio</p>
+        </div>
+        <div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="left">
+          <p>
+            Hi,My name is <span>Vishisht</span> <br />
+            and I am a passionatebr <br />
+            <span id="element"></span>
+          </p>
+          <div class="btn-class">
+            <button>Download Resume</button>
+            <button>Visit Github</button>
+          </div>
+        </div>
+        <div class="right">
+          <img id="dev_img" src="dev2.png" alt="devloper image" />
+        </div>
+      </div>
+      <hr />
+      <div class="section2">
+        <p>What I have done so far</p>
+        <div>
+          <b> Work Experince</b>
+        </div>
+        <section class="timeline">
+          <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item">
+              <div class="icon">👨‍💻</div>
+              <div class="connector"></div>
+              <div class="content">
+                <h3>HTML Developer <span>(2010-2012)</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="icon">👨‍💻</div>
+              <div class="connector"></div>
+              <div class="content">
+                <h3>Node.js Developer <span>(2012-2014)</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="icon">👨‍💻</div>
+              <div class="connector"></div>
+              <div class="content">
+                <h3>HTML Developer <span>(2010-2012)</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="icon">👨‍💻</div>
+              <div class="connector"></div>
+              <div class="content">
+                <h3>HTML Developer <span>(2010-2012)</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- <footer>
+      <div class="section3">
+        <div>
+          <p id="foot-portfolio">
+            <b>
+              Vishisht's<br />
+              Developer Portfolio
+            </b>
+          </p>
+        </div>
+        <div>
+          <ul class="foot-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="foot-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="foot-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <p id="copyright">www.vishishtTrivedi|| All Rights Reserved</p>
+    </footer> -->
+    
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2><span class="logo">✂</span>tyle</h2>
+                <p>Subscribe to Easy Tutorials YouTube channel to watch more videos on website development and press the bell icon to get immediate notification of latest videos.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Office</h3>
+                <!-- <hr> -->
+                <div class="loading-bar">
+                    <div class="bar"></div>
+                  </div>
+                  
+                <p>ITPL Road, Whitefield, Bangalore<br>Karnataka, PIN 560066, India</p>
+                <p>avinashdm@outlook.com</p>
+                <p><b>+91-0123456789</b></p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Links</h3>
+                <!-- <hr> -->
+                <div class="loading-bar">
+                    <div class="bar"></div>
+                  </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <!-- <hr> -->
+                <div class="loading-bar">
+                    <div class="bar"></div>
+                  </div>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your email id">
+                    <button>→</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="icons8-facebook-50.png" alt="Facebook"></a>
+                    <a href="#"><img src="icons8-twitter-50.png" alt="Twitter"></a>
+                    <a href="#"><img src="icons8-whatsapp-50.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="icons8-pinterest-50.png" alt="Pinterest"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Vishisht Trivedi © 2025 - All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Graphic Designer", "Video Editor", " and Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
